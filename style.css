@@ -166,11 +166,9 @@ p{
  @media (max-width:870px){
 
      .header{
-        top:-25px;
-         height: 80px;
+       background:none;
      }
       .header.fixed{
-        top:-25px;
          height: 80px;
      }
     }
