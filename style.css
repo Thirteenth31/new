@@ -169,6 +169,10 @@ p{
         top:-25px;
          height: 80px;
      }
+      .header.fixed{
+        top:-25px;
+         height: 80px;
+     }
     }
 
 
