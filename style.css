@@ -909,7 +909,7 @@ display: none;
     .burger{
         display:none;
     }
-.burger.hide{
+.burger.visible{
         display: block;
     }
 
