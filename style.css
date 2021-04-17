@@ -903,11 +903,13 @@ display: none;
     top:8px;
 
 }
-
+.burger.hide{
+        display: block;
+    }
 @media (max-width:992px){
 
     .burger{
-        display:block;
+        display:none;
     }
 
 
