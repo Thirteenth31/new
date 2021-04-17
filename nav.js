@@ -30,6 +30,7 @@ $(function(){
         }else{
              header.removeClass("fixed");
             navToggle.removeClass("hide");
+              nav.removeClass("show");
         }
 
     };
