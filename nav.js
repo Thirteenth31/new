@@ -26,8 +26,10 @@ $(function(){
 
           if(scrollPos > introH){
              header.addClass("fixed");
+             navToggle.addClass("hide");
         }else{
              header.removeClass("fixed");
+            navToggle.removeClass("hide");
         }
 
     };
