@@ -930,7 +930,10 @@ display: none;
     border:0;
     cursor: pointer;
     padding: 9px 3px;
+    
 }
+.burger:focus{
+    outline:0;
 .burger_item{
     display: block;
     width: 30px;
