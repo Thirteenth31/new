@@ -212,7 +212,7 @@ height: 80px;
     transition:all .3s linear;
 }
 .nav_link:hover.nav_link:after{
-  width:90%;
+  width:100%;
 }
 
 .nav_link:first-child{
