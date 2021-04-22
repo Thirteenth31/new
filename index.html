@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>WelEng</title>
+
+        <meta name="description" content="description"/>
+        <meta name="keywords" content="description"/>
+
+        <meta name="google" content="notranslate"/>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="null.css">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+        <!--Favicons-->
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="images/Favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/Favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/Favicon/favicon-16x16.png">
+<link rel="manifest" href="images/Favicon/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!--Sprite-->
+        <svg style="display:none">
+            <symbol id="facebook" viewBox="0 0 24 24">
+                <g>
+                <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+                </g>
+            </symbol>
+
+            <symbol id="twitter"  viewBox="0 0 512 512" >
+                    <g>
+    <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0"/>
+                </g>
+            </symbol>
+
+            <symbol id="linkedin" viewBox="0 0 552.77 552.77">
+           <g>
+        <path d="M17.95,528.854h71.861c9.914,0,17.95-8.037,17.95-17.951V196.8c0-9.915-8.036-17.95-17.95-17.95H17.95
+            C8.035,178.85,0,186.885,0,196.8v314.103C0,520.816,8.035,528.854,17.95,528.854z"/>
+        <path d="M17.95,123.629h71.861c9.914,0,17.95-8.036,17.95-17.95V41.866c0-9.914-8.036-17.95-17.95-17.95H17.95
+            C8.035,23.916,0,31.952,0,41.866v63.813C0,115.593,8.035,123.629,17.95,123.629z"/>
+        <path d="M525.732,215.282c-10.098-13.292-24.988-24.223-44.676-32.791c-19.688-8.562-41.42-12.846-65.197-12.846
+            c-48.268,0-89.168,18.421-122.699,55.27c-6.672,7.332-11.523,5.729-11.523-4.186V196.8c0-9.915-8.037-17.95-17.951-17.95h-64.192
+            c-9.915,0-17.95,8.035-17.95,17.95v314.103c0,9.914,8.036,17.951,17.95,17.951h71.861c9.915,0,17.95-8.037,17.95-17.951V401.666
+            c0-45.508,2.748-76.701,8.244-93.574c5.494-16.873,15.66-30.422,30.488-40.649c14.83-10.227,31.574-15.343,50.24-15.343
+            c14.572,0,27.037,3.58,37.393,10.741c10.355,7.16,17.834,17.19,22.436,30.104c4.604,12.912,6.904,41.354,6.904,85.33v132.627
+            c0,9.914,8.035,17.951,17.949,17.951h71.861c9.914,0,17.949-8.037,17.949-17.951V333.02c0-31.445-1.982-55.607-5.941-72.48
+            S535.836,228.581,525.732,215.282z"/>
+    </g>
+
+            </symbol>
+        </svg>
+    <!---Header--->
+
+    <header class="header" id="header" >
+        <div class="container">
+            <div class="header_inner">
+              <div class="header_logo" data-aos="fade-right" data-aos-delay="100">
+<picture>
+                <source srcset="images/logos/logonew.png"  type="image/jpeg" media="(max-width:992px)" height="50" width="230";>
+
+
+                 <img src="images/logos/logonew.png" alt="logo" height="50" width="230" data-scroll="#intro">
+
+ </picture>
+
+                </div>
+                <nav class="nav" id="nav">
+
+
+                 <a class="nav_link" href="#" data-scroll="#services" data-aos="fade-left" data-aos-delay="200">services</a>
+
+                  <a class="nav_link" href="#" data-scroll="#works" data-aos="fade-left" data-aos-delay="300">Works</a>
+
+
+                 <a class="nav_link" href="#" data-scroll="#contacts" data-aos="fade-left" data-aos-delay="400">contacts</a>
+
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                   <span class="burger_item" id="burger">menu</span>
+                </button>
+
+            </div><!--header inner-->
+        </div>  <!--container-->
+    </header>
+
+         <!---Intro--->
+<section class="intro" id="intro">
+<img src="images/img/intro/intro3.png" alt="" class="intro_img">
+          <div class="container">
+             <div class="intro_inner">
+
+            <div class="intro_inner_body">
+
+               <h1 class="intro_title" data-aos="fade-up" data-aos-delay="100">
+                Welcome To <span class="gray">WEL</span ><span class="orange">ENG</span>
+                </h1>
+                 <h2 class="intro_subtitle" data-aos="fade-up" data-aos-delay="300">
+               MOBILE WELDING IN SUSSEX AND SURREY
+                 </h2>
+
+             </div>
+
+
+
+              <!--<div class="intro_inner_arrow_item2"></div>
+              <div class="intro_inner_arrow_item1"></div>-->
+              <div class="intro_inner_arrow_item"></div>
+           </div>
+
+              </div>
+
+</section>
+
+
+
+         <!---services--->
+ <div class="section">
+
+     <div class="section_header" id="services">
+         <h2 class="section_title" data-aos="fade-up" data-aos-delay="50">Our Services</h2>
+         <p class="section_subtitle" data-aos="fade-up" data-aos-delay="100">We can restore most metal items. Best of all, we come to you!</p>
+     </div>
+
+
+
+        <div class="services" >
+          <div class="container">
+            <div class="services_inner">
+
+                <div class="services_item services_item_photo" data-aos="fade-right" data-aos-delay="300">
+                <img class="services_photo" src="images/img/services/7.jpg" alt="" >
+                </div>
+
+                <div class="services_item services_item_text" >
+
+                <div class="services_card_title" data-aos="fade-left" data-aos-delay="300">REPAIRS AND ALTERATIONS</div>
+                <div class="services_card_subtitle" data-aos="fade-left" data-aos-delay="350">We provide a complete mobile welding repair services</div>
+                <div class="services_card_description" data-aos="fade-left" data-aos-delay="400">  Structural steel welding repairs, car welding repairs, boat welding repairs, metal gate welding repairs.
+                lorem100
+                </div>
+
+              </div>
+
+           </div><!--/.services_inner-->
+
+
+           </div><!--/.container-->
+        </div><!--/.services-->
+
+        <div class="services">
+           <div class="container">
+             <div class="services_inner">
+
+
+                <div class="services_item services_item_photo" data-aos="fade-right" data-aos-delay="300">
+                <img class="services_photo" src="images/img/services/8.jpg" alt="" >
+                </div>
+
+               <div class="services_item services_item_text" >
+
+                <div class="services_card_title" data-aos="fade-left" data-aos-delay="300">RESTORATIONS</div>
+                <div class="services_card_subtitle" data-aos="fade-left" data-aos-delay="350">Mobile Welding Restoration Service</div>
+                <div class="services_card_description" data-aos="fade-left" data-aos-delay="400">We restore and repair your gates, railings, bikes (including aluminium frames) and antique furniture . We also weld cars, motor bike parts.
+               </div>
+              </div>
+
+
+            </div><!--/.services_inner-->
+          </div><!--/.container-->
+        </div><!--/.services-->
+
+
+        <div class="services">
+           <div class="container">
+            <div class="services_inner">
+
+                <div class="services_item services_item_photo" data-aos="fade-right" data-aos-delay="300">
+                <img class="services_photo" src="images/img/services/9.jpg" alt="" >
+                </div>
+
+                <div class="services_item services_item_text" >
+
+                <div class="services_card_title" data-aos="fade-left" data-aos-delay="300">FABRICATIONS</div>
+                <div class="services_card_subtitle" data-aos="fade-left" data-aos-delay="350">Mobile Welding Fabrication</div>
+                <div class="services_card_description" data-aos="fade-left" data-aos-delay="400">If you have something that you require fabricating please get in touch.</div>
+
+              </div>
+
+             </div><!--/.services_inner-->
+           </div><!--/.container-->
+       </div><!--/.services-->
+</div><!--/.services section-->
+
+
+ <!---Works--->
+
+<section  id="works">
+
+   <div class="section_header">
+      <h2 class="section_title" data-aos="fade-up" data-aos-delay="50">Our Works</h2>
+      <p class="section_subtitle" data-aos="fade-up" data-aos-delay="100">Fabrications and repairing</p>
+   </div>
+
+     <div class="works">
+
+        <div class="works_item" data-aos="fade-up" data-aos-delay="50">
+            <img class="works_photo" src="images/img/works/gt2.jpeg" height="400" width="300" alt="works photo">
+              <div class="works_content">
+                <div class="works_card_title">project name</div>
+                <div class="works_card_text">description</div>
+            </div>
+        </div>
+
+         <div class="works_item" data-aos="fade-up" data-aos-delay="50">
+            <img class="works_photo" src="images/img/works/11.jpg" height="400" width="300" alt="works photo">
+              <div class="works_content">
+                <div class="works_card_title">project name</div>
+                <div class="works_card_text">description</div>
+            </div>
+        </div>
+
+         <div class="works_item" data-aos="fade-up" data-aos-delay="50">
+            <img class="works_photo" src="images/img/works/car1.jpg" height="400" width="300" alt="works photo">
+              <div class="works_content">
+                <div class="works_card_title">project name</div>
+                <div class="works_card_text">description</div>
+            </div>
+        </div>
+
+         <div class="works_item" data-aos="fade-up" data-aos-delay="50">
+            <img class="works_photo" src="images/img/works/13.jpg" height="400" width="300" alt="works photo">
+              <div class="works_content">
+                <div class="works_card_title">project name</div>
+                <div class="works_card_text">description</div>
+            </div>
+        </div>
+
+         <div class="works_item" data-aos="fade-up" data-aos-delay="50">
+            <img class="works_photo" src="images/img/works/14.jpg" height="400" width="300" alt="works photo">
+              <div class="works_content">
+                <div class="works_card_title">project name</div>
+                <div class="works_card_text">description</div>
+            </div>
+        </div>
+
+         <div class="works_item" data-aos="fade-up" data-aos-delay="50">
+            <img class="works_photo" src="images/img/works/gt5.jpeg" height="400" width="300" alt="works photo">
+              <div class="works_content">
+                <div class="works_card_title">project name</div>
+                <div class="works_card_text">description</div>
+            </div>
+        </div>
+
+         <div class="works_item" data-aos="fade-up" data-aos-delay="50">
+            <img class="works_photo" src="images/img/works/3.jpg" height="400" width="300" alt="works photo">
+              <div class="works_content">
+                <div class="works_card_title">project name</div>
+                <div class="works_card_text">description</div>
+            </div>
+        </div>
+
+         <div class="works_item" data-aos="fade-up" data-aos-delay="50">
+            <img class="works_photo" src="images/img/works/6.jpeg" height="400" width="300" alt="works photo">
+              <div class="works_content">
+                <div class="works_card_title">project name</div>
+                <div class="works_card_text">description</div>
+            </div>
+        </div>
+
+    </div><!--/.works-->
+</section><!--/.works section-->
+
+
+<!-- map -->
+<section id="contacts" >
+    <div class="section_header ">
+      <h2 class="section_title" data-aos="fade-up" data-aos-delay="50">where are we</h2>
+      <p class="section_subtitle" data-aos="fade-up" data-aos-delay="100">We are based in West sussex</p>
+    </div>
+  <div class="section section-map" data-aos="fade-up" data-aos-delay="100">
+
+       <div class="map">
+
+<img src="images/img/map/map1.jpg" alt="" class="map_img">
+           <div class="map_link_title">
+            <a class="map_link" href="https://goo.gl/maps/bUk4DBHWZaxZocPN8" target="_blank">Open Map</a>
+
+       </div>
+       </div>
+     </div>
+
+</section>
+
+<!-- map -->
+         <!--Footer-->
+  <section>
+
+        <footer class="footer">
+            <div class="container">
+
+                <div class="footer_inner">
+
+                    <div class="footer_block">
+                    <h4 class="footer_title">Location</h4>
+                        <address class="footer_address">
+                        <div>Crawley</div>
+                        <div>West Sussex</div>
+                        <div> England</div>
+                        </address>
+                    </div>
+
+
+                    <div class="footer_block">
+                    <h4 class="footer_title">we are on</h4>
+                         <div class="social social-footer">
+                         <a class="social_item" href="#" target="_blank">
+                         <svg class="social_icon">
+                         <use xlink:href="#facebook"></use>
+                       </svg>
+                       </a>
+
+                          <a class="social_item" href="#"       target="_blank">
+                          <svg class="social_icon">
+                          <use xlink:href="#twitter"></use>
+                       </svg>
+                       </a>
+
+                          <a class="social_item" href="#" target="_blank">
+                          <svg class="social_icon">
+                          <use xlink:href="#linkedin"></use>
+                       </svg>
+                       </a>
+
+                     </div>
+                    </div>
+
+                   <div class="footer_block">
+                        <h4 class="footer_title">About Us</h4>
+                        <div class="footer_text">
+                        <p><a href="mailto:welengltd@gmail.com"><span class="footer_mail">&#9993;</span>Send email</a></p>
+                        <p><a href="tel:+447417474764"><span class="footer_phone">&#9990;</span>call us</a></p>
+
+                        </div>
+                   </div>
+
+                </div><!--/.footer_inner-->
+
+            </div><!--/.container-->
+
+
+            <div class="copyright">
+                <div class="container">
+                   <div class="copyright_text">
+
+                       <p>copyright <span class="gray">wel</span><span class="orange">eng </span>2020</p>
+                    </div>
+               </div>
+            </div>
+        </footer>
+</section><!--/.footer section-->
+<!--      Jva Script  -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script src="nav.js">
+        </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="aos.js"></script>
+
+    <script src="https://kit.fontawesome.com/a174e9a806.js" crossorigin="anonymous"></script>
+
+    </body>
+
+
+</html>
