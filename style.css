@@ -660,12 +660,16 @@ top:40%;
 .works_item:hover .works_content{
     opacity:1;
 }
+@media (max-width:1024px){
+ .works_item{
+     flex:0 0 50%;
+     min-height:350px;
+    }
+}
 @media (max-width:770px){
 
     .works_item{
-        flex:0 0 50%;
-        min-height: 350px;
-    }
+      
     .works_subtitle{
         font-size: 20px;
         padding: 0 10px;
