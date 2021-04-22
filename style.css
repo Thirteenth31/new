@@ -984,12 +984,14 @@ top:40%;
         transform-origin: left bottom;
         transform: rotate(-45deg)
         translate3d(0px,2px,0);
+          background-color:#ff9e00;
     }
      #navToggle.x .burger_item:before{
 
          transform-origin: left top;
          transform: rotate(45deg)
          translate3d(0px,-3px,0);
+          background-color:#ff9e00;
     }
 }
 
